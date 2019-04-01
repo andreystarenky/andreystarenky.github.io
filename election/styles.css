@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.CONcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+      border-radius: 3px;
+  border-top: 4px solid;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #0042ad;
+  background-color: #f1f1f1;
+}
+
+.LIBcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+      border-radius: 3px;
+  border-top: 4px solid;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #c40000;
+  background-color: #f1f1f1;
+}
+
+.NDPcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+      border-radius: 3px;
+  border-top: 4px solid;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #ef9700;
+  background-color: #f1f1f1;
+}
+
+.GRNcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+      border-radius: 3px;
+  border-top: 4px solid;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #116606;
+  background-color: #f1f1f1;
+}
+
+.BLQcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+      border-radius: 3px;
+  border-top: 4px solid;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #74dce0;
+  background-color: #f1f1f1;
+}
+
+.OTHcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+      border-radius: 3px;
+  border-top: 4px solid;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #7c7870;
+  background-color: #f1f1f1;
+}
