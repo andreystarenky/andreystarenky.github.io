@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+a { text-decoration: none; }
+a:visited { text-decoration: none; color:black; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #FAFAFA;
