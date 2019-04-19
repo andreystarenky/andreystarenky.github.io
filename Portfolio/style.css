@@ -1,0 +1,302 @@
+input[type=checkbox] {
+  display:none;
+}
+
+body, html{
+  margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+}
+
+mbr{
+	display: block;
+    margin: 10px 0;
+}
+
+.edubody{
+	margin:0em 0em 0em 0.3em;
+}
+
+.lightbox {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.lightbox .content {
+  background:#fff;
+  margin:3em 3em 0em 3em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+
+.cp1{
+line-height:150%;
+
+ }
+ 
+.lightbox2 {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.lightbox2 .content2 {
+  background:#fff;
+  margin:3em 3em 0em 3em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+
+.lightbox3 {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.lightbox3 .content3 {
+  background:#fff;
+  margin:3em 3em 0em 3em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+ 
+.SchoolAppLightBox {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.SchoolAppLightBox .SchoolAppContent {
+  background:#fff;
+  margin:3em 5em 0em 5em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+
+.BenAppLightBox {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.BenAppLightBox .BenAppContent {
+  background:#fff;
+  margin:3em 5em 0em 5em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+ 
+.OOPJavaLightBox {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.OOPJavaLightBox .OOPJavaContent {
+  background:#fff;
+  margin:3em 5em 0em 5em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+ 
+#call:checked ~ .lightbox {
+  visibility:visible;
+  opacity:1;
+}
+ 
+#call2:checked ~ .lightbox2 {
+  visibility:visible;
+  opacity:1;
+}
+
+#call3:checked ~ .lightbox3 {
+  visibility:visible;
+  opacity:1;
+}
+
+#SchoolAppCall:checked ~ .SchoolAppLightBox {
+  visibility:visible;
+  opacity:1;
+}
+ 
+#BenAppCall:checked ~ .BenAppLightBox {
+  visibility:visible;
+  opacity:1;
+}
+
+#OOPJavaCall:checked ~ .OOPJavaLightBox {
+  visibility:visible;
+  opacity:1;
+}
+ 
+.input1 {
+  padding: 2em 0em 2em 0em;
+}
+
+.input2 {
+   padding: 0em 0em 0em 0em;
+}
+
+.input3 {
+   padding: 0em 0em 0em 0em;
+}
+
+.SchoolAppInput {
+   padding: 0em 0em 0em 0em;
+}
+
+.BenAppInput {
+   padding: 2em 0em 2em 0em;
+}
+
+.OOPJavaInput {
+   padding: 0em 0em 0em 0em;
+}
+
+ /*variable classes*/
+.pointer { 
+  cursor:pointer;
+}
+  
+.fr ]{
+  float:right;
+}
+
+
+.preview {
+    opacity: 1; /* Change this to .5 for 50% opacity */
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+}
+.preview:hover {
+    opacity: 0.65;
+}
+
+html {
+    overflow-y:scroll;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  opacity: 1; /* Change this to .5 for 50% opacity */
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+	
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  opacity: 1; /* Change this to .5 for 50% opacity */
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+	
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
