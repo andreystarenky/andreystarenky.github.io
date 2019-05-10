@@ -16,43 +16,103 @@
     </button>
     <div class="dropdown-content">
       <a href="oop.html">OOP 1</a>
-      <a href="#">OOP 2</a>
-      <a href="#">Arrays/Arraylists</a>
-	  <a href="#">Sort/Search</a>
-	  <a href="#">Recursion</a>
+      <a href="oop2.html">OOP 2</a>
+      <a href="arraysarraylists.html">Arrays/Arraylists</a>
+	  <a href="sortsearch.html">Sort/Search</a>
+	  <a href="recursion.html">Recursion</a>
     </div>
   </div> 
   <a href="educationalprojects.html">Educational Projects</a>
   <a href="myprojects.html">My Projects</a>
 </div>
-<a id="idk"><img style="width: 100%; height: 100%;" 
-title="Educational Info" alt="Educationa Info Banner" 
-src="educationalinfobanner.png"></a>
 
 
 
-   
+<div class="s">
 <div class = "edubody">
 <font size="8">
-Object Oriented Programming
+Object Oriented Programming p. 1
 </font>
 <hr>
+<center>
+<font size="4"><br/>
+This lesson will teach you about the 4 basic concepts of Object Oriented Programming:<br/>
+- Inheritance<br/>
+- Encapsulation<br/>
+- Abstraction<br/>
+- Polymorphism<br/><br/>
+You will learn what the concepts are, as well as how they are applied in Java.<br/>
+You will be given code examples for each, as well as a project that demonstrates Object Oriented Programming in action<br/>
+<br/>
+
+<a href="oopexample.html" target="_blank">OOP Story <img class="preview" src="newwindow.png" alt="close" height="12" width="12"></a><br/><br/>
+
+<div class="OOPJava1Input">
+<input type ="checkbox" id="OOPJava1Call">
+<a style="text-decoration:none" href="javascript:void(0)" class="pointer">
+<label for="OOPJava1Call" class="pointer">Lightbox - Java OOP Program</label>
+</a>
+
+
+<div class="OOPJava1LightBox">
+<div class="OOPJava1Content">
+<p style="float:right">
+<a href="javascript:void(0)" class="fr pointer">
+<label for="OOPJava1Call" class="pointer"><img class="preview" 
+src="x.png" alt="close" height="15" width="15"></label>
+</a></p>
+
+<center>
+<font size="5"><br/>Java Object Oriented Programming Demonstration #1</font>
+</center>
+<p align="left">
+<font size="4"><br/>
+This is a basic demonstration of Oject Oiented Pogramming in Java.<br/><mbr/>
+It consists of a super class <i>PeripheralDevice</i> which has basic characteristics and behaviours such as <i>connectionType</i> and <i>disconnect()</i><br/><mbr/>
+and a subclass <i>OutputDevice</i> which extends <i>PeripheralDevice</i> and has it's own characteristics and behaviours such as <i>resolutionWidth</i> and <i>cropResolution().</i><br/><mbr/>
+There is also a <i>RunMain.java</i> class which creates Instances of the classes and demonstrates the behaviours of the Objects.<br/><br/>
+<img style="width: 300px; height: 100px;"
+src="OOP1preview.jpg">
+<br/><mbr/>
+<a target="blank" href="https://github.com/andreystarenky/educational_projects/tree/master/oop_example_1">View the project</a>
+</font>
+</p>
+</div>
+</div>
+</div>
+
+<br/>
+
+</font>
+</center>
+<p style="float:right">
+<img style="width: 500px; height: 260px;"
+src="inheritance.jpg"><br/>
+</p>
+
 <font size="6">
 <u>Inheritance</u><br/>
 </font>
 <font size="4"><mbr/>
 Inheritence is the concept that involves objects taking on properties of already existing objects or classes.<br/>
 This uses the parent-child class relationship, also known as <i>Superclass - Subclass</i>.<br/>
-In Java, inheriting a class is used with the keyword <i>extends</i> (ex. Public class Cat <i>extends</i> Animal)<br/>
+In Java, inheriting a class is used with the keyword <i>extends</i> (ex. Public class Cat <i>extends</i> Animal).<br/>
 A Subclass can access any of the super's public variables and methods. To protect variables from being accidentally modified, the Superclass's vairables are set to <i>private</i>,<br/>
 and getter/setter methods are used to obtain and change the value of the variables.<br/>
 A Subclass can also Override any of the super's methods if needed.<br/><br/>
+<img style="width: 300px; height: 80px;"
+src="inheritance_ex.jpg"><br/><br/>
 Click
-<a style="text-decoration:none" href="https://www.adobe.com/devnet/actionscript/learning/oop-concepts/inheritance.html" class="pointer">
+<a style="text-decoration:none" href="https://www.adobe.com/devnet/actionscript/learning/oop-concepts/inheritance.html" target="blank" class="pointer">
 <b>here</b></a>
-to read more about Encapsulation.
+to read more about Inheritance.
 <br/><br/>
 </font>
+
+<p style="float:right">
+<img style="width: 500px; height: 260px;"
+src="encapsulation.png"><br/>
+</p>
 
 <font size="6">
 <u>Encapsulation</u><br/>
@@ -61,8 +121,10 @@ to read more about Encapsulation.
 Encapsulation is the structured design of a class. It incorporates a set attributes along with a set of methods to be able to retrieve and change these variables<br/>
 As mentioned previously, these methods are called "getters" and "setters" than can return or change the values<br/>
 Encapsulation is a basic concept that is key for all Object Oriented Programming<br/><br/>
+<img style="width: 300px; height: 180px;"
+src="encapsulation_ex.jpg"><br/><br/>
 Click
-<a style="text-decoration:none" href="https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/" class="pointer">
+<a style="text-decoration:none" href="https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/" target="blank" class="pointer">
 <b>here</b></a>
 to read more about Encapsulation.
 <br/><br/>
@@ -77,35 +139,31 @@ need to incorporate individually. This ensures that the child classes are follow
 Methods apply abstraction by using the key word <i>abstract</i> (ex. public abstract void move();).<br/>
 Abstract methods may not have any code in them at the Parent level. Any class that incorporates abstract methods needs to include the key word <i>abstract</i> before <i>class</i> (ex. public abstract class Animal())<br/>
 Interfaces are classes that only have abstract methods, and are signified by the key word <i>Interface</i> before <i>class</i> (ex. public interface LifeCycle())<br/><br/>
+<img style="width: 260px; height: 180px;"
+src="abstraction_ex.jpg"><br/><br/>
+
 Click
-<a style="text-decoration:none" href="https://javatutorial.net/java-abstraction-example" class="pointer">
+<a style="text-decoration:none" href="https://javatutorial.net/java-abstraction-example" target="blank" class="pointer">
 <b>here</b></a>
 to read more about Abstraction.
 <br/><br/>
 </font>
 
-<font size="6">
-<u>Polymorphism</u><br/>
-</font>
 <font size="4"><mbr/>
-Polymorphism is simply the ability of a certain object to take on many forms, and is also a key concept in Object Oriented Programming.<br/>
-The concept of Polymorphism is typically seen when a variable of Superclass type is used to refer to a Subclass object. This is classified as an "is-a" relationship.<br/>
-The two main types of casting that occur in Polymorphism are <i>Downcasting</i> and <i>Upcasting</i><br/><br/>
-Click
-<a style="text-decoration:none" href="https://javatutorial.net/java-abstraction-example" class="pointer">
-<b>here</b></a>
-to read more about Polymorphism.
-<br/>
+Polymorphism is the 4th key component of OOP.<br/>
+Please visit the
+<a style="text-decoration:none" href="oop2.html" class="pointer">
+<b>OOP Part 2</b></a>
+page to learn about Polymorphism.
+<br/><br/>
+</font>
 
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
 </font>
 <div>
+</div>
 </body>
 
 <script> </script>

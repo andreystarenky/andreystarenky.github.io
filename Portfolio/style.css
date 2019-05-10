@@ -2,11 +2,38 @@ input[type=checkbox] {
   display:none;
 }
 
+#fade_home p{
+	opacity:0;
+}
+
 body, html{
+	font-family: Geneva, sans-serif; 
   margin: 0;
         padding: 0;
         border: 0;
         outline: 0;
+}
+
+header{
+	position: fixed;
+	z-index: -1;
+	top:40px;
+}
+
+section{
+	position:relative;
+	z-index: 2;
+	top:185px;
+	background-color: #edeff2;
+	overflow:auto;
+}
+
+.s{
+	position:relative;
+	z-index: 2;
+	top:46px;
+	background-color: #edeff2;
+	overflow:auto;
 }
 
 mbr{
@@ -32,7 +59,7 @@ mbr{
  
 .lightbox .content {
   background:#fff;
-  margin:3em 3em 0em 3em;
+  margin:5em 7em 0em 7em;
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -56,9 +83,10 @@ line-height:150%;
  
 .lightbox2 .content2 {
   background:#fff;
-  margin:3em 3em 0em 3em;
-  padding: 0.1em 1em 1em 1em;
+  margin:5em 10em 0em 10em;
+  padding: 0.1em 1em 1em 1.5em;
   border-radius:12px;
+  line-height:150%;
 }
 
 .lightbox3 {
@@ -75,9 +103,10 @@ line-height:150%;
  
 .lightbox3 .content3 {
   background:#fff;
-  margin:3em 3em 0em 3em;
+  margin:5em 10em 0em 10em;
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
+  line-height:150%;
 }
  
 .SchoolAppLightBox {
@@ -94,7 +123,26 @@ line-height:150%;
  
 .SchoolAppLightBox .SchoolAppContent {
   background:#fff;
-  margin:3em 5em 0em 5em;
+  margin:5em 5em 0em 5em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+
+.ElectionAppLightBox {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.ElectionAppLightBox .ElectionAppContent {
+  background:#fff;
+  margin:5em 5em 0em 5em;
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -113,12 +161,12 @@ line-height:150%;
  
 .BenAppLightBox .BenAppContent {
   background:#fff;
-  margin:3em 5em 0em 5em;
+  margin:5em 5em 0em 5em;
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
  
-.OOPJavaLightBox {
+.OOPJava1LightBox {
   position:fixed;
   top:0;
   right:0;
@@ -130,9 +178,28 @@ line-height:150%;
   transition: all ease-in 300ms;
 }
  
-.OOPJavaLightBox .OOPJavaContent {
+.OOPJava1LightBox .OOPJava1Content {
   background:#fff;
-  margin:3em 5em 0em 5em;
+  margin:5em 5em 0em 5em;
+  padding: 0.1em 1em 1em 1em;
+  border-radius:12px;
+}
+ 
+.OOPJava2LightBox {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  height:100%;
+  background: rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  transition: all ease-in 300ms;
+}
+ 
+.OOPJava2LightBox .OOPJava2Content {
+  background:#fff;
+  margin:5em 5em 0em 5em;
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -152,6 +219,11 @@ line-height:150%;
   opacity:1;
 }
 
+#ElectionAppCall:checked ~ .ElectionAppLightBox {
+  visibility:visible;
+  opacity:1;
+}
+
 #SchoolAppCall:checked ~ .SchoolAppLightBox {
   visibility:visible;
   opacity:1;
@@ -162,7 +234,12 @@ line-height:150%;
   opacity:1;
 }
 
-#OOPJavaCall:checked ~ .OOPJavaLightBox {
+#OOPJava1Call:checked ~ .OOPJava1LightBox {
+  visibility:visible;
+  opacity:1;
+}
+
+#OOPJava2Call:checked ~ .OOPJava2LightBox {
   visibility:visible;
   opacity:1;
 }
@@ -183,11 +260,19 @@ line-height:150%;
    padding: 0em 0em 0em 0em;
 }
 
+.ElectionAppInput {
+   padding: 0em 0em 0em 0em;
+}
+
 .BenAppInput {
    padding: 2em 0em 2em 0em;
 }
 
-.OOPJavaInput {
+.OOPJava1Input {
+   padding: 0em 0em 0em 0em;
+}
+
+.OOPJava2Input {
    padding: 0em 0em 0em 0em;
 }
 
@@ -221,7 +306,12 @@ html {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height:46px;
   font-family: Arial;
+  font-size:9;
 }
 
 /* Links inside the navbar */
@@ -278,7 +368,8 @@ html {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  position: fixed;
+  z-index: 3;
 }
 
 /* Links inside the dropdown */
