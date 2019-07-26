@@ -18,22 +18,22 @@
 
     <div class="CONcard">
       <h3>Conservative</h3>
-      <h1>35.4%</h1>
-      <h5>&#9650; +0.7</h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
+      <h1><span id="conNum"></h1>
+      <h5><span id="conCH"></h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
     </div>
 </th>
 <th>
     <div class="LIBcard">
       <h3>Liberal</h3>
-      <h1>31.3%</h1>
-      <h5>&#9650; +0.2</h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
+      <h1><span id="libNum"></h1>
+      <h5><span id="libCH"></h5>
     </div>
   </th>
   <th>
     <div class="NDPcard">
       <h3>NDP</h3>
-      <h1>14.8%</h1>
-      <h5>&#9650; +0.8</h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
+      <h1><span id="ndpNum"></h1>
+      <h5><span id="ndpCH"></h5>
     </div>
   </th>
   </tr>
@@ -42,29 +42,29 @@
 	  <br/>
     <div class="GRNcard">
       <h3>Green</h3>
-      <h1>10.2%</h1>
-      <h5>&#9660; -0.9</h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
+      <h1><span id="greNum"></h1>
+      <h5><span id="greCH"></h5>
     </div>
 	<br>
   </th>
   <th>
     <div class="BLQcard">
       <h3>Bloc Q.</h3>
-      <h1>4.4%</h1>
-      <h5>0.0</h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
+      <h1><span id="bloNum"></h1>
+      <h5><span id="bloCH"></h5>
     </div>
   </th>
   <th>
     <div class="OTHcard">
       <h3>Other</h3>
-      <h1>4.0%</h1>
-      <h5>&#9660; -1.0</h5> <!-- UP &#9650; -->  <!-- DOWN &#9660 -->
+      <h1><span id="othNum"></h1>
+      <h5><span id="othCH"></h5>
     </div>
   </th>
   </tr>
 </table>
     <center>
-Last updated <span id="m"></span> <span id="d"></span>, <span id="y"></span> .
+Last updated <span id="m"></span> <span id="d"></span>, <span id="y"></span>
 
 <script>
 var dt = new Date();
@@ -87,6 +87,37 @@ var y = dt.getYear() +1900;
 document.getElementById("m").innerHTML = m;
 document.getElementById("d").innerHTML = d;
 document.getElementById("y").innerHTML = y;
+
+var conNum = 35.4+"%";
+var conCH = "&#9650; " + 0.7;
+document.getElementById("conNum").innerHTML = conNum;
+document.getElementById("conCH").innerHTML = conCH;
+
+var libNum = 31.3+"%";
+var libCH = "&#9650; " + 0.2;
+document.getElementById("libNum").innerHTML = libNum;
+document.getElementById("libCH").innerHTML = libCH;
+
+var ndpNum = 14.8+"%";
+var ndpCH = "&#9650; " + 0.8;
+document.getElementById("ndpNum").innerHTML = ndpNum;
+document.getElementById("ndpCH").innerHTML = ndpCH;
+
+var greNum = 10.2+"%";
+var greCH = "&#9660; " + 0.9;
+document.getElementById("greNum").innerHTML = greNum;
+document.getElementById("greCH").innerHTML = greCH;
+
+var bloNum = 4.4+"%";
+var bloCH = "-";
+document.getElementById("bloNum").innerHTML = bloNum;
+document.getElementById("bloCH").innerHTML = bloCH;
+
+var othNum = 4.0+"%";
+var othCH = "&#9660; " +0.4;
+document.getElementById("othNum").innerHTML = othNum;
+document.getElementById("othCH").innerHTML = othCH;
+
 </script>
 </center>
 </body>
