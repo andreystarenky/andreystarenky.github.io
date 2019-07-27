@@ -1,5 +1,6 @@
 :root {
-    --navheight: 0;
+    --headheight: 0;
+	--navheight: 0;
 }
 
 body, html{
@@ -20,12 +21,13 @@ mbr{
 .header{
 	position: fixed;
 	z-index: -1;
+	top:var(--navheight);
 }
 
 section{
 	position:relative;
 	z-index: 2;
-	top: 392px;
+	top: var(--headheight);
 	background-color: #edeff2;
 	overflow:auto;
 }

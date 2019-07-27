@@ -6,8 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body style="background-color: #edeff2">
 
-
-<div class="navbar">
+<div id = "nav" class="navbar">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
@@ -408,6 +407,7 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <font color="#474747">&copy; StarenkySoftware 2018</font><br/>
 <span id = "testVal"></span>
 <span id = "testVal2"></span>
+<span id = "testVal3"></span>
 </center>
 <br/>
 <br/>
@@ -417,12 +417,19 @@ src="website.png" alt="Website" height="33" width="33"></a>
 </body>
 	
 <script>
-var navheight = document.getElementById("insideHeader").clientHeight + "px";
-document.getElementById("testVal").innerHTML = navheight;
-//document.documentElement.style.setProperty('--navheight',navheight);
+//Setting the top margin of the header to match the navbar
+var navheightNum = document.getElementById("nav").clientHeight;
+var navheight = navheightNum + "px";
+document.getElementById("testVal3").innerHTML = navheight;
+document.documentElement.style.setProperty('--navheight',navheight);
+//Setting the top margin of the section to match the header
+var headheightNum = document.getElementById("insideHeader").clientHeight + navheightNum;
+var headheight = headheightNum + "px";
+document.getElementById("testVal").innerHTML = headheight;
+document.documentElement.style.setProperty('--headheight',headheight);
 
-var secElement = document.getElementById("mainSec");
-secElement.style.top = navheight;
-document.getElementById("testVal2").innerHTML = secElement.clientHeight;
+//var secElement = document.getElementById("mainSec");
+//secElement.style.top = navheight;
+//document.getElementById("testVal2").innerHTML = secElement.clientHeight;
 </script>
 </html>
