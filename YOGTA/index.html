@@ -16,7 +16,7 @@
 <div id = "insideHeader">
 <a id="idk"><img style="width: 100%; height: 100%;" 
 title="Youth Organizations of the GTA" alt="YOGTA Banner" 
-src="bannerv1.png"></a>
+src="banner_good.png"></a>
 </div>
 </div>
 
@@ -405,9 +405,9 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <br/>
 <center>
 <font color="#474747">&copy; StarenkySoftware 2018</font><br/>
-<span id = "testVal"></span>
+<!--<span id = "testVal"></span>
 <span id = "testVal2"></span>
-<span id = "testVal3"></span>
+<span id = "testVal3"></span>-->
 </center>
 <br/>
 <br/>
@@ -420,12 +420,12 @@ src="website.png" alt="Website" height="33" width="33"></a>
 //Setting the top margin of the header to match the navbar
 var navheightNum = document.getElementById("nav").clientHeight;
 var navheight = navheightNum + "px";
-document.getElementById("testVal3").innerHTML = navheight;
+//document.getElementById("testVal3").innerHTML = navheight;
 document.documentElement.style.setProperty('--navheight',navheight);
 //Setting the top margin of the section to match the header
 var headheightNum = document.getElementById("insideHeader").clientHeight + navheightNum;
 var headheight = headheightNum + "px";
-document.getElementById("testVal").innerHTML = headheight;
+//document.getElementById("testVal").innerHTML = headheight;
 document.documentElement.style.setProperty('--headheight',headheight);
 
 //var secElement = document.getElementById("mainSec");
