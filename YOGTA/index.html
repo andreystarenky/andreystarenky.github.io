@@ -2,6 +2,8 @@
 
 <html>
 <link href="style.css" rel="stylesheet" type="text/css"/>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body style="background-color: #edeff2">
 
 
@@ -11,13 +13,15 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<header>
-<a id="idk"><img style="width: 100%; height: 70%;" 
+<div class = "header">
+<div id = "insideHeader">
+<a id="idk"><img style="width: 100%; height: 100%;" 
 title="Youth Organizations of the GTA" alt="YOGTA Banner" 
 src="bannerv1.png"></a>
-</header>
+</div>
+</div>
 
-<section>
+<section id="mainSec">
 
 <center>
 <!--<font size="6">About Us</font><br/>-->
@@ -401,7 +405,9 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <br/>
 <br/>
 <center>
-<font color="#474747">&copy; StarenkySoftware 2018</font>
+<font color="#474747">&copy; StarenkySoftware 2018</font><br/>
+<span id = "testVal"></span>
+<span id = "testVal2"></span>
 </center>
 <br/>
 <br/>
@@ -410,5 +416,13 @@ src="website.png" alt="Website" height="33" width="33"></a>
 
 </body>
 	
-<script></script>
+<script>
+var navheight = document.getElementById("insideHeader").clientHeight + "px";
+document.getElementById("testVal").innerHTML = navheight;
+//document.documentElement.style.setProperty('--navheight',navheight);
+
+var secElement = document.getElementById("mainSec");
+secElement.style.top = navheight;
+document.getElementById("testVal2").innerHTML = secElement.clientHeight;
+</script>
 </html>
