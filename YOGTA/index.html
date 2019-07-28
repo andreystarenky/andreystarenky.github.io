@@ -3,7 +3,7 @@
 <html>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1024, initial-scale=1.0">
 <body style="background-color: #edeff2">
 
 <div id = "nav" class="navbar">
@@ -12,12 +12,10 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<div class = "header">
-<div id = "insideHeader">
+<div id = "headerDiv" class = "header">
 <a id="idk"><img style="width: 100%; height: 100%;" 
 title="Youth Organizations of the GTA" alt="YOGTA Banner" 
 src="banner_good.png"></a>
-</div>
 </div>
 
 <section id="mainSec">
@@ -418,18 +416,32 @@ src="website.png" alt="Website" height="33" width="33"></a>
 	
 <script>
 //Setting the top margin of the header to match the navbar
-var navheightNum = document.getElementById("nav").clientHeight;
+var navheightNum = document.getElementById("nav").offsetHeight;
 var navheight = navheightNum + "px";
+var headElement = document.getElementById("headerDiv");
+headElement.style.top = navheightNum + "px";
+
+var secElement = document.getElementById("mainSec");
+var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
+secElement.style.top = headheightNum + "px";
+
+/*
 //document.getElementById("testVal3").innerHTML = navheight;
 document.documentElement.style.setProperty('--navheight',navheight);
 //Setting the top margin of the section to match the header
-var headheightNum = document.getElementById("insideHeader").clientHeight + navheightNum;
+var headheightNum = document.getElementById("headerDiv").clientHeight + navheightNum;
 var headheight = headheightNum + "px";
 //document.getElementById("testVal").innerHTML = headheight;
 document.documentElement.style.setProperty('--headheight',headheight);
-
-//var secElement = document.getElementById("mainSec");
-//secElement.style.top = navheight;
+*/
+//Setting up lightbox margins depending on screen aspect ratio (if width is less than 1.45 x Height)
+var w = window.innerWidth;
+var h = window.innerHeight;
+console.log(w+" x "+h);
+if(w/h < 1.45){
+	console.log("small window");
+	document.documentElement.style.setProperty('--lbPaddingNoVid', "7em 15em 2em 15em");
+}
 //document.getElementById("testVal2").innerHTML = secElement.clientHeight;
 </script>
 </html>

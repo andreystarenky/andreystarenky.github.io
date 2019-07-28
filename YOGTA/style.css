@@ -1,6 +1,8 @@
 :root {
     --headheight: 0;
 	--navheight: 0;
+	--lbPaddingVid: 5em 10em 2em 10em;
+	--lbPaddingNoVid: 10em 20em 2em 20em;
 }
 
 body, html{
@@ -21,13 +23,12 @@ mbr{
 .header{
 	position: fixed;
 	z-index: -1;
-	top:var(--navheight);
+	top:2.8em;
 }
 
 section{
 	position:relative;
 	z-index: 2;
-	top: var(--headheight);
 	background-color: #edeff2;
 	overflow:auto;
 }
@@ -56,7 +57,7 @@ input[type=checkbox] {
 .lightbox .content {
   font-style: normal;
   background:#fff;
-  margin:4em 10em 2em 10em;
+  margin: var(--lbPaddingVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;  
 }
@@ -80,7 +81,7 @@ line-height:150%;
  
 .lightbox2 .content2 {
   background:#fff;
-  margin:4em 10em 2em 10em;
+  margin: var(--lbPaddingVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -99,7 +100,7 @@ line-height:150%;
  
 .lightbox3 .content3 {
   background:#fff;
-  margin:5em 10em 2em 10em;
+  margin: var(--lbPaddingVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -118,7 +119,7 @@ line-height:150%;
  
 .lightbox4 .content4 {
   background:#fff;
-  margin:7em 20em 2em 20em;
+  margin: var(--lbPaddingVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -137,7 +138,7 @@ line-height:150%;
  
 .lightbox5 .content5 {
   background:#fff;
-  margin:4em 12em 2em 12em;
+  margin: var(--lbPaddingVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -156,7 +157,7 @@ line-height:150%;
  
 .lightbox6 .content6 {
   background:#fff;
-  margin:8em 20em 2em 20em;
+  margin: var(--lbPaddingNoVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -175,7 +176,7 @@ line-height:150%;
  
 .lightbox7 .content7 {
   background:#f0f0f0;
-  margin:4em 12em 2em 12em;
+  margin: var(--lbPaddingVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -194,7 +195,7 @@ line-height:150%;
  
 .lightbox8 .content8 {
   background:#fff;
-  margin:8em 20em 2em 20em;
+  margin: var(--lbPaddingNoVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -285,6 +286,7 @@ line-height:150%;
   z-index: 3;
   opacity:1;
   visibility:visible;
+  height:2.8em;
 }
 
 /* Links inside the navbar */
