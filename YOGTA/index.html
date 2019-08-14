@@ -429,10 +429,34 @@ var headheightNum = document.getElementById("headerDiv").clientHeight  + navheig
 secElement.style.top = headheightNum + "px";
 console.log("Sec top - " + headheightNum + "px");
 
+var loading = true;
+
 window.onload = function () { var secElement = document.getElementById("mainSec");
 var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
 secElement.style.top = headheightNum + "px";
-console.log("Sec top - " + headheightNum + "px"); }
+console.log("Sec top - " + headheightNum + "px");
+loading=false;
+}
+
+var delayVar = 0;
+
+delayer();
+
+function delayer(){
+console.log("Delay Var: "+delayVar);
+if(delayVar!=100){
+if(loading){
+setTimeout(function() {
+  console.log("Loading");
+	delayVar+=1;
+	delayer();
+}, 500);
+}
+}
+}
+
+
+console.log("LOADED");
 
 /*
 //document.getElementById("testVal3").innerHTML = navheight;
