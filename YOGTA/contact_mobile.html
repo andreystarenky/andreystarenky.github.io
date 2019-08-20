@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="icon" href="icon.png"/>
+<title>Home</title>
+
+<script>
+document.documentElement.style.setProperty('--lbPaddingVid', "22em 5em 2em 5em");
+document.documentElement.style.setProperty('--lbPaddingNoVid', "32em 5em 2em 5em");
+</script>
+
+</head>
+
+<body style="background-color: #edeff2">
+
+<div style = "height:3.7em;" id = "nav" class="navbar">
+  <a style = "font-size:30px;" href="index.html">Home</a>
+  <a style = "font-size:30px;" href="about.html">About</a>
+  <a style = "font-size:30px;" href="contact.html">Contact</a>
+</div>
+
+<div style = "top:3.7em;" id = "headerDiv" class = "header">
+<a id="idk"><img style="width: 100%; height: 100%; object-fit: fill;" 
+title="Youth Organizations of the GTA" alt="YOGTA Banner" 
+src="mobile_banner.png"></a>
+</div>
+
+<section id="mainSec">
+
+<center>
+<font size="6"><mbr/>
+Contact<br/>
+<hr/>
+</font>
+<div style="padding: 1em;">
+<!--<font size="6">About Us</font><br/>-->
+<font size="5">
+To have your organization featured, or for any immediate inquires or reports:<br/><br/>
+</center>
+<div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+	<font size="6">
+<b>Email: </b>contact@yogta.ca<br/>
+<b>Telephone: </b>647 - 551 - 5931<br/><br/><br/>
+</font>
+</div>
+</div>
+
+<center>
+For any other questions and inquires about the website:<br/><br/>
+</center>
+<div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+	<font size="6">
+<b>Email: </b>info@yogta.ca<br/>
+</font>
+</div>
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<center>
+<font color="#474747">&copy; StarenkySoftware 2019</font><br/>
+<!--<span id = "testVal"></span>
+<span id = "testVal2"></span>
+<span id = "testVal3"></span>-->
+</center>
+<br/>
+<br/>
+
+</section>
+
+</body>
+	
+<script>
+//Setting the top margin of the header to match the navbar
+var navheightNum = document.getElementById("nav").offsetHeight;
+var navheight = navheightNum + "px";
+var headElement = document.getElementById("headerDiv");
+headElement.style.top = navheightNum + "px";
+
+var secElement = document.getElementById("mainSec");
+var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
+secElement.style.top = headheightNum + "px";
+console.log("Sec top - " + headheightNum + "px");
+
+var loading = true;
+
+window.onload = function () { var secElement = document.getElementById("mainSec");
+var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
+secElement.style.top = headheightNum + "px";
+console.log("Sec top - " + headheightNum + "px");
+loading=false;
+}
+
+var delayVar = 0;
+
+delayer();
+
+function delayer(){
+console.log("Delay Var: "+delayVar);
+if(delayVar!=100){
+if(loading){
+setTimeout(function() {
+  console.log("Loading");
+	delayVar+=1;
+	delayer();
+}, 500);
+}
+}
+}
+
+
+console.log("LOADED");
+
+/*
+//document.getElementById("testVal3").innerHTML = navheight;
+document.documentElement.style.setProperty('--navheight',navheight);
+//Setting the top margin of the section to match the header
+var headheightNum = document.getElementById("headerDiv").clientHeight + navheightNum;
+var headheight = headheightNum + "px";
+//document.getElementById("testVal").innerHTML = headheight;
+document.documentElement.style.setProperty('--headheight',headheight);
+*/
+//Setting up lightbox margins depending on screen aspect ratio (if width is less than 1.45 x Height)
+var w = window.innerWidth;
+var h = window.innerHeight;
+console.log(w+" x "+h);
+
+//document.getElementById("testVal2").innerHTML = secElement.clientHeight;
+</script>
+</html>
+</html>

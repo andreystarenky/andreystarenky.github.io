@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel="icon" href="icon.png"/>
+<title>Home</title>
+
+<script>
+var w = window.innerWidth;
+var h = window.innerHeight;
+if(w/h < 1.45){
+	console.log("small window BEFORE LOAD");	
+}
+if(w/h < 1.1){
+	console.log("TABLE COMPRESSION");
+	window.location.replace("about_mobile.html");
+}
+</script>
+
+
+</head>
+
+<body style="background-color: #edeff2">
+
+<div id = "nav" class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div id = "headerDiv" class = "header">
+<a id="idk"><img style="width: 100%; height: 100%; object-fit: fill;" 
+title="Youth Organizations of the GTA" alt="YOGTA Banner" 
+src="banner_good.png"></a>
+</div>
+
+<section id="mainSec">
+
+<center>
+<font size="6"><mbr/>
+About<br/>
+<hr/>
+</font>
+<!--<font size="6">About Us</font><br/>-->
+<font size="3">
+YOGTA is an index of Youth Organizations located in the GTA<br/>
+dedicated to helping students discover more about their community<br/>
+and look for opportunities to develop their leadership skills.<br/><br/>
+</center>
+<div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+<b>Y</b>outh<br/>
+<b>O</b>rganizations of the<br/>
+<b>G</b>reater<br/>
+<b>T</b>oronto<br/>
+<b>A</b>rea<br/><br/>
+</div>
+</div>
+<center>
+The goal of YOGTA is to reach as many students as possible in high school and university<br/>
+to allow them to find an organization that meets their interests and allows<br/>
+them to learn more about their career paths.<br/><br/>
+Many students across the world often struggle with finding a career path that suits them,<br/>
+and don't always have access to tools and resources that will assist them with doing so.<br/>
+Thanks to many youth organizations across Ontario, students are able to learn more about<br/>
+the fields of Business, Medicine, IT, and Health to name a few.<br/><br/>
+One of the most difficult steps for students in finding these Organizations is knowing where to look.<br/>
+YOGTA helps students to learn more about various Youth Organizations by displaying them<br/>
+each with a clickable logo that will open a lightbox containing information about the organization,<br/>
+as well as well as links to their website and social medias.<br/><br/><br/>
+If you wish to have your oganization featured, please click <a href="contact.html">here</a> to reach out to us.<br/>
+</font>
+</center>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<center>
+<font color="#474747">&copy; StarenkySoftware 2019</font><br/>
+<!--<span id = "testVal"></span>
+<span id = "testVal2"></span>
+<span id = "testVal3"></span>-->
+</center>
+<br/>
+<br/>
+
+</section>
+
+</body>
+	
+<script>
+//Setting the top margin of the header to match the navbar
+var navheightNum = document.getElementById("nav").offsetHeight;
+var navheight = navheightNum + "px";
+var headElement = document.getElementById("headerDiv");
+headElement.style.top = navheightNum + "px";
+
+var secElement = document.getElementById("mainSec");
+var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
+secElement.style.top = headheightNum + "px";
+console.log("Sec top - " + headheightNum + "px");
+
+var loading = true;
+
+window.onload = function () { var secElement = document.getElementById("mainSec");
+var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
+secElement.style.top = headheightNum + "px";
+console.log("Sec top - " + headheightNum + "px");
+loading=false;
+}
+
+var delayVar = 0;
+
+delayer();
+
+function delayer(){
+console.log("Delay Var: "+delayVar);
+if(delayVar!=100){
+if(loading){
+setTimeout(function() {
+  console.log("Loading");
+	delayVar+=1;
+	delayer();
+}, 500);
+}
+}
+}
+
+
+console.log("LOADED");
+
+/*
+//document.getElementById("testVal3").innerHTML = navheight;
+document.documentElement.style.setProperty('--navheight',navheight);
+//Setting the top margin of the section to match the header
+var headheightNum = document.getElementById("headerDiv").clientHeight + navheightNum;
+var headheight = headheightNum + "px";
+//document.getElementById("testVal").innerHTML = headheight;
+document.documentElement.style.setProperty('--headheight',headheight);
+*/
+//Setting up lightbox margins depending on screen aspect ratio (if width is less than 1.45 x Height)
+var w = window.innerWidth;
+var h = window.innerHeight;
+console.log(w+" x "+h);
+
+if(w/h < 1.1){
+	console.log("TABLE COMPRESSION");
+	window.location.replace("about_mobile.html");
+}
+
+if(w/h < 1.45){
+	console.log("small window");
+	document.documentElement.style.setProperty('--lbPaddingNoVid', "7em 15em 2em 15em");
+}
+//document.getElementById("testVal2").innerHTML = secElement.clientHeight;
+</script>
+</html>

@@ -67,6 +67,11 @@ line-height:150%;
 
  }
  
+.cp1Mobile{
+line-height:150%;
+font-size:30px;
+ }
+ 
 .lightbox2 {
   position:fixed;
   top:0;
@@ -119,7 +124,7 @@ line-height:150%;
  
 .lightbox4 .content4 {
   background:#fff;
-  margin: var(--lbPaddingVid);
+  margin: var(--lbPaddingNoVid);
   padding: 0.1em 1em 1em 1em;
   border-radius:12px;
 }
@@ -280,7 +285,6 @@ line-height:150%;
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family: Arial;
   width: 100%;
   position: fixed;
   z-index: 3;

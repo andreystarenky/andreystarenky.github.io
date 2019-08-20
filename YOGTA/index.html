@@ -1,11 +1,34 @@
 <!doctype html>
 
 <html>
+<head>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-<meta name="viewport" content="width=1024, initial-scale=1.0">
 <link rel="icon" href="icon.png"/>
 <title>Home</title>
+
+<script>
+var w = window.innerWidth;
+var h = window.innerHeight;
+if(w/h < 1.45){
+	console.log("small window BEFORE LOAD");	
+}
+if(w/h < 1.1){
+	console.log("TABLE COMPRESSION");
+	window.location.replace("mobile.html");
+}
+</script>
+
+<!-- ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6127266629309110",
+    enable_page_level_ads: true
+  });
+</script>
+
+</head>
 
 <body style="background-color: #edeff2">
 
@@ -405,7 +428,7 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <br/>
 <br/>
 <center>
-<font color="#474747">&copy; StarenkySoftware 2018</font><br/>
+<font color="#474747">&copy; StarenkySoftware 2019</font><br/>
 <!--<span id = "testVal"></span>
 <span id = "testVal2"></span>
 <span id = "testVal3"></span>-->
@@ -471,6 +494,12 @@ document.documentElement.style.setProperty('--headheight',headheight);
 var w = window.innerWidth;
 var h = window.innerHeight;
 console.log(w+" x "+h);
+
+if(w/h < 1.1){
+	console.log("TABLE COMPRESSION");
+	window.location.replace("mobile.html");
+}
+
 if(w/h < 1.45){
 	console.log("small window");
 	document.documentElement.style.setProperty('--lbPaddingNoVid', "7em 15em 2em 15em");
