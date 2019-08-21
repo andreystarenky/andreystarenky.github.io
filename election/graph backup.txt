@@ -1,0 +1,47 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+		
+		var CONVALS = [10,30,20,40,30,10,30,20,40,30];
+		var LIBVALS = [30,20,40,30,10,30,20,40,30,20];
+		var NDPVALS = [20,40,30,10,30,20,40,30,10,25];
+		var GREVALS = [40,30,10,30,20,40,30,10,20,40];
+		var BLOVALS = [30,10,30,20,40,30,10,30,20,30];
+		var PPCVALS = [35,35,15,35,25,30,20,15,25,10];
+		var DATES = ['Aug 1','Aug 2','Aug 3','Aug 4','Aug 5','Aug 6','Aug 7','Aug 8','Aug 9','Aug 10',];
+		
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Conservative', 'Liberal', 'NDP', 'Green', 'Bloc', 'PPC'],
+          [DATES[0],  CONVALS[0], LIBVALS[0], GREVALS[0], NDPVALS[0], BLOVALS[0], PPCVALS[0]],
+          [DATES[1],  CONVALS[1], LIBVALS[1], GREVALS[1], NDPVALS[1], BLOVALS[1], PPCVALS[1]],
+		  [DATES[2],  CONVALS[2], LIBVALS[2], GREVALS[2], NDPVALS[2], BLOVALS[2], PPCVALS[2]],
+		  [DATES[3],  CONVALS[3], LIBVALS[3], GREVALS[3], NDPVALS[3], BLOVALS[3], PPCVALS[3]],
+		  [DATES[4],  CONVALS[4], LIBVALS[4], GREVALS[4], NDPVALS[4], BLOVALS[4], PPCVALS[4]],
+		  [DATES[5],  CONVALS[5], LIBVALS[5], GREVALS[5], NDPVALS[5], BLOVALS[5], PPCVALS[5]],
+		  [DATES[6],  CONVALS[6], LIBVALS[6], GREVALS[6], NDPVALS[6], BLOVALS[6], PPCVALS[6]],
+		  [DATES[7],  CONVALS[7], LIBVALS[7], GREVALS[7], NDPVALS[7], BLOVALS[7], PPCVALS[7]],
+		  [DATES[8],  CONVALS[8], LIBVALS[8], GREVALS[8], NDPVALS[8], BLOVALS[8], PPCVALS[8]],
+		  [DATES[9],  CONVALS[9], LIBVALS[9], GREVALS[9], NDPVALS[9], BLOVALS[9], PPCVALS[9]],
+        ]);
+
+        var options = {
+          title: 'Latest 10 Election Poll Averages',
+		  chartArea: {'width': '90%', 'height': '80%'},
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('stats_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="stats_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
