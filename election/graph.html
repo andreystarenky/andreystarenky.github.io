@@ -3,30 +3,25 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 		
-		var CONVALS = [33.2, 32.7, 32.5, 32.9, 33.3, 33.7, 33.3, 32.9, 33.0, 33.4];
-		var LIBVALS = [32.9, 32.8, 33.1, 32.9, 32.9, 32.4, 33.1, 33.2, 33.2, 33.1];
-		var NDPVALS = [14.1, 15.4, 15.1, 15.0, 14.9, 14.3, 14.0, 13.9, 13.6, 13.7];
-		var GREVALS = [10.8, 10.6, 10.8, 10.9, 10.7, 11.0, 10.8, 11.1, 11.2, 11.1];
-		var BLOVALS = [4.4, 4.4, 4.2, 4.2, 4.2, 4.2, 4.2, 4.1, 4.1, 4.0];
-		var PPCVALS = [4.6, 4.1, 4.3, 4.1, 4.1, 4.4, 4.6, 4.8, 4.9, 4.7];
-		var DATES = ['July 15', 'July 17', 'July 19', 'July 23', 'July 26', 'July 28', 'July 31', 'Aug 6', 'Aug 13', 'Aug 21'];
+		var CONVALS = [32.7, 32.9, 33.7, 32.9, 34.1];
+		var LIBVALS = [32.8, 32.9, 32.4, 33.2, 32.6];
+		var NDPVALS = [15.4, 15.0, 14.3, 13.9, 13.8];
+		var GREVALS = [10.6, 10.9, 11.0, 11.1, 10.7];
+		var BLOVALS = [4.4, 4.2, 4.2, 4.1, 4.2];
+		var PPCVALS = [4.1, 4.1, 4.4, 4.8, 4.6];
+		var DATES = ['July 17', 'July 23', 'July 28', 'Aug 6', 'Aug 21'];
 		
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Conservative', 'Liberal', 'NDP', 'Green', 'Bloc', 'PPC'],
+          ['Year', 'CON', 'LIB', 'NDP', 'GRE', 'BLO', 'PPC'],
           [DATES[0],  CONVALS[0], LIBVALS[0], GREVALS[0], NDPVALS[0], BLOVALS[0], PPCVALS[0]],
           [DATES[1],  CONVALS[1], LIBVALS[1], GREVALS[1], NDPVALS[1], BLOVALS[1], PPCVALS[1]],
 		  [DATES[2],  CONVALS[2], LIBVALS[2], GREVALS[2], NDPVALS[2], BLOVALS[2], PPCVALS[2]],
 		  [DATES[3],  CONVALS[3], LIBVALS[3], GREVALS[3], NDPVALS[3], BLOVALS[3], PPCVALS[3]],
-		  [DATES[4],  CONVALS[4], LIBVALS[4], GREVALS[4], NDPVALS[4], BLOVALS[4], PPCVALS[4]],
-		  [DATES[5],  CONVALS[5], LIBVALS[5], GREVALS[5], NDPVALS[5], BLOVALS[5], PPCVALS[5]],
-		  [DATES[6],  CONVALS[6], LIBVALS[6], GREVALS[6], NDPVALS[6], BLOVALS[6], PPCVALS[6]],
-		  [DATES[7],  CONVALS[7], LIBVALS[7], GREVALS[7], NDPVALS[7], BLOVALS[7], PPCVALS[7]],
-		  [DATES[8],  CONVALS[8], LIBVALS[8], GREVALS[8], NDPVALS[8], BLOVALS[8], PPCVALS[8]],
-		  [DATES[9],  CONVALS[9], LIBVALS[9], GREVALS[9], NDPVALS[9], BLOVALS[9], PPCVALS[9]],
+		  [DATES[4],  CONVALS[4], LIBVALS[4], GREVALS[4], NDPVALS[4], BLOVALS[4], PPCVALS[4]]
         ]);
 
         var options = {
@@ -42,6 +37,6 @@
     </script>
   </head>
   <body>
-    <div id="stats_chart" style="width: 900px; height: 500px"></div>
+    <div id="stats_chart" style="width: 600px; height: 500px"></div>
   </body>
 </html>
