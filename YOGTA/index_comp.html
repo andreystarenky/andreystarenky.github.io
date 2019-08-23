@@ -8,10 +8,16 @@
 <title>Home</title>
 
 <script>
-document.documentElement.style.setProperty('--lbPaddingVid', "22em 5em 2em 5em");
-document.documentElement.style.setProperty('--lbPaddingNoVid', "32em 5em 2em 5em");
+document.documentElement.style.setProperty('--lbPaddingVid', "7em 2em 2em 2em");
+document.documentElement.style.setProperty('--lbPaddingNoVid', "7em 2em 2em 2em");
 
-if (!(/Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+var w = window.innerWidth;
+var h = window.innerHeight;
+if (/Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+	window.location.replace("mobile.html");
+}
+else if(w/h > 1.1){
+	console.log("back to main");
 	window.location.replace("index.html");
 }
 </script>
@@ -20,10 +26,10 @@ if (!(/Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|K
 
 <body style="background-color: #edeff2">
 
-<div style = "height:3.7em;" id = "nav" class="navbar">
-  <a style = "font-size:30px;" href="index.html">Home</a>
-  <a style = "font-size:30px;" href="about.html">About</a>
-  <a style = "font-size:30px;" href="contact.html">Contact</a>
+<div id = "nav" class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </div>
 
 <div style = "top:3.7em;" id = "headerDiv" class = "header">
@@ -37,7 +43,7 @@ src="mobile_banner.png"></a>
 <center>
 <!--<font size="6">About Us</font><br/>-->
 <br/>
-<font size="6">
+<font size="4">
 YOGTA is an index of Youth Organizations located in the GTA
 dedicated to helping students discover more about their community
 and look for opportunities to develop their leadership skills.
@@ -52,7 +58,7 @@ and look for opportunities to develop their leadership skills.
 <input type ="checkbox" id="call">
 <a href="javascript:void(0)" class="pointer">
 <label for="call" class="pointer"><img class="preview" 
-src="jec.png" alt="JEC" height="334" width="750"></label>
+src="jec.png" alt="JEC" height="150" width="300"></label>
 </a>
 
 
@@ -67,21 +73,13 @@ src="x.png" alt="close" height="15" width="15"></label>
 <br/>
 <img src="jec.png" alt="JEC" height="70" width="180">
 <mbr/>
-<div class="cp1Mobile">
+<div class="cp1Comp">
 The Junior Economic Club (JEC) of Toronto is a federally registered non-profit organization operated by high school students that strives
  to promote learning opportunities about the world of business. Our mission focuses on exposing ambitious high school students to free 
  events regardless of socio-economic background in order to level the playing field for students across the GTA. In the past, we have 
  partnered with organizations like the Globe and Mail, TMX Group and Mckinsey & Company in order to explore topics ranging from emerging 
  technologies to fundamentals of investing, and beyond. 
-<br/><br/>
-<mbr/>
-<iframe width="360" height="200" 
-src="https://www.youtube.com/embed/aI3XWCWPg6Y" 
-frameborder="0" allow="accelerometer; autoplay; 
-encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
 </div>
-<br/>
 <mbr/>
 <a href="https://www.facebook.com/jectoronto" target="_blank"><img class="preview" 
 src="facebook.png" alt="facebook" height="35" width="35"></a>
@@ -105,7 +103,7 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <input type ="checkbox" id="call2">
 <a href="javascript:void(0)" class="pointer">
 <label for="call2" class="pointer"><img class="preview" 
-src="fcss.png" alt="FCSS" height="334" width="750"></label>
+src="fcss.png" alt="FCSS" height="150" width="300"></label>
 </a>
 
 
@@ -120,18 +118,13 @@ src="x.png" alt="close" height="15" width="15"></label>
 <br/>
 <img src="fcss.png" alt="FCSS-FESC" height="70" width="180">
 <br/><br/>
-<div class="cp1Mobile">
+<div class="cp1Comp">
 The Federation of Canadian Secondary Students / Federation des eleves du secondaire au Canada (FCSS-FESC) is an entirely non-partisan 
 youth-led charity that strives to advocate for students in secondary schools and CEGEPs across Canada.
 We offer programmes that enhance and enrich the educational experience while also empowering students to become engaged 
 stakeholders in the education system. We will support students in navigating the stresses of high school life and help build leadership, 
 resiliency, and coping skills to reduce harm and maximize outcomes in education.
-<br/><mbr/><br/>
-<iframe width="360" height="200" 
-src="https://www.youtube.com/embed/gNyF7gNBiy0" 
-frameborder="0" allow="accelerometer; autoplay; 
-encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+
 </div>
 <mbr/>
 <a href="https://www.facebook.com/fcssfesc/" target="_blank"><img class="preview" 
@@ -160,7 +153,7 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <input type ="checkbox" id="call3">
 <a href="javascript:void(0)" class="pointer">
 <label for="call3" class="pointer"><img class="preview" 
-src="oms.png" alt="OMS" height="334" width="750"></label>
+src="oms.png" alt="OMS" height="150" width="300"></label>
 </a>
 
 
@@ -174,16 +167,10 @@ src="x.png" alt="close" height="15" width="15"></label>
 <center>
 <img src="oms.png" alt="Operation Med School" height="100" width="250">
 
-<div class="cp1Mobile">
+<div class="cp1Comp">
 Operation Med School (OMS) is a non-profit, student-run organization that hosts one-day conferences in Canada and the USA to educate 
 youth about the journey of a medical career. Our goal is to inspire, inform and encourage students to follow their medical dreams and 
 head bravely into their future endeavors.
-<br/><br/>
-<iframe width="360" height="200"
-src="https://www.youtube.com/embed/aOIpSJgRyIE"
-frameborder="0" allow="accelerometer; autoplay;
-encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
 </div>
 <mbr/>
 <a href="https://www.facebook.com/OMSToronto/" target="_blank"><img class="preview" 
@@ -202,12 +189,12 @@ src="website.png" alt="Website" height="33" width="33"></a>
 </tr>
 <tr>
 <th>
-
+<br/><br/><br/>
 <div class="input2">
 <input type ="checkbox" id="call4">
 <a href="javascript:void(0)" class="pointer">
 <label for="call4" class="pointer"><img class="preview" 
-src="tohacks.png" alt="TOHacks" height="334" width="334"></label>
+src="tohacks.png" alt="TOHacks" height="170" width="170"></label>
 </a>
 
 
@@ -221,7 +208,7 @@ src="x.png" alt="close" height="15" width="15"></label>
 <center>
 <img src="tohacks.png" alt="TOHacks" height="124" width="124">
 
-<div class="cp1Mobile">
+<div class="cp1Comp">
 TOHacks aims to connect talented youth entrepreneurs, leaders and innovators with the top industry professionals in rising fields of new 
 technologies. Having recently hosted its inaugural hackathon, TOHacks will continue to foster an environment that promises to embolden these 
 students towards pursuing a career in STEAM. We believe in the youth of today and know that when they are given the proper tools and guidance, 
@@ -247,12 +234,12 @@ src="website.png" alt="Website" height="33" width="33"></a>
 
 <tr>
 <th>
-
+<br/><br/>
 <div class="input2">
 <input type ="checkbox" id="call5">
 <a href="javascript:void(0)" class="pointer">
 <label for="call5" class="pointer"><img class="preview" 
-src="p5k.png" alt="Project 5K" height="334" width="440"></label>
+src="p5k.png" alt="Project 5K" height="180" width="200"></label>
 </a>
 
 
@@ -266,16 +253,12 @@ src="x.png" alt="close" height="15" width="15"></label>
 <center>
 <img src="p5k.png" alt="Project 5K" height="90" width="120">
 
-<div class="cp1Mobile">
+<div class="cp1Comp">
 Project 5K is a non-profit organization created by youths for youths. The founders of Project 5K noticed that many youths want to volunteer, 
 but they don't know where to volunteer. At the same time, there are many events who don't have enough volunteers. 
 That's the reason why Project 5K started back in 2013. We aim to make volunteering opportunities more easily accessible for youths and connect 
 them to various enjoyable volunteer opportunities to make their community a better place. By signing up for Project 5K, you get volunteering 
 opportunities directly to your email and we make the sign up process both simple and efficient for both our volunteers and our event partners.
-<br/><mbr/>
-<iframe width="360" height="200" src="https://www.youtube.com/embed/ilCcocZLEk4"
- frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
- picture-in-picture" allowfullscreen></iframe>
 </div>
 <a href="https://www.facebook.com/Project5K/" target="_blank"><img class="preview" 
 src="facebook.png" alt="facebook" height="35" width="35"></a>
@@ -298,7 +281,7 @@ src="website.png" alt="Website" height="33" width="33"></a>
 <input type ="checkbox" id="call6">
 <a href="javascript:void(0)" class="pointer">
 <label for="call6" class="pointer"><img class="preview" 
-src="projectpulse.png" alt="ProjectPulse" height="334" width="476"></label>
+src="projectpulse.png" alt="ProjectPulse" height="180" width="250"></label>
 </a>
 
 
@@ -312,7 +295,7 @@ src="x.png" alt="close" height="15" width="15"></label>
 <center>
 <img src="projectpulse.png" alt="TOHacks" height="124" width="184">
 
-<div class="cp1Mobile">
+<div class="cp1Comp">
 <mbr/>
 Project Pulse is an organization that strives to familiarize motivated students with the world of health sciences. 
 Pulse hopes to offer yearly conventions throughout Canada that seeks to enrich and enlighten youth on the field of health sciences. 
@@ -333,12 +316,12 @@ src="website.png" alt="Website" height="33" width="33"></a>
 
 <tr>
 <th>
-<br/><br/>
+<br/><br/><br/>
 <div class="input2">
 <input type ="checkbox" id="call7">
 <a href="javascript:void(0)" class="pointer">
 <label for="call7" class="pointer"><img class="preview" 
-src="pump.png" alt="Pump Professionals" height="334" width="440"></label>
+src="pump.png" alt="Pump Professionals" height="180" width="200"></label>
 </a>
 
 
@@ -352,14 +335,11 @@ src="x.png" alt="close" height="15" width="15"></label>
 <center><br/>
 <img src="pump.png" alt="Pump Professionals" height="124" width="170">
 
-<div class="cp1Mobile">
+<div class="cp1Comp">
 Prospective Medical Professionals (PuMP) is a youth not-for-profit organization on a mission to help aspiring students understand the medical 
 field and its careers. Founded in March of 2018, the organization started out as a group of high school students who looked to tackle problems 
 faced by a great deal of youth who were curious about medicine and difficulty finding medical learning opportunities for secondary school students.
-<br/><br/>
-<iframe width="360" height="200" src="https://www.youtube.com/embed/JQCBQ57WYyk"
- frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
- picture-in-picture" allowfullscreen></iframe><br/><br/>
+<br/><mbr/>
 </div>
 <a href="https://www.facebook.com/pumprofessionals/" target="_blank"><img class="preview" 
 src="facebook.png" alt="facebook" height="35" width="35"></a>
@@ -377,12 +357,12 @@ src="website.png" alt="Website" height="33" width="33"></a>
 </tr>
 <tr>
 <th>
-
+<br/><br/><br/>
 <div class="input2">
 <input type ="checkbox" id="call8">
 <a href="javascript:void(0)" class="pointer">
 <label for="call8" class="pointer"><img class="preview" 
-src="y2labs.png" alt="Y2 Labs" height="196" width="476"></label>
+src="y2labs.png" alt="Y2 Labs" height="100" width="250"></label>
 </a>
 
 
@@ -397,7 +377,7 @@ src="x.png" alt="close" height="15" width="15"></label>
 <br/>
 <img src="y2labs.png" alt="Y2 Labs" height="80" width="184">
 
-<div class="cp1Mobile">
+<div class="cp1Comp">
 <br/>
 Y2 Entrepreneurship Labs is an organization founded by high school students that runs educational conferences for students to learn more 
 about opportunites for entrepreneurship in the business field. We have partnered with 30 different business owners or professionals to 

@@ -10,6 +10,10 @@
 <script>
 document.documentElement.style.setProperty('--lbPaddingVid', "22em 5em 2em 5em");
 document.documentElement.style.setProperty('--lbPaddingNoVid', "32em 5em 2em 5em");
+
+if (!(/Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+	window.location.replace("contact.html");
+}
 </script>
 
 </head>

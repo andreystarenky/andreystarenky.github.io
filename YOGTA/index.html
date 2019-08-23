@@ -13,9 +13,12 @@ var h = window.innerHeight;
 if(w/h < 1.45){
 	console.log("small window BEFORE LOAD");	
 }
-if(w/h < 1.1){
-	console.log("TABLE COMPRESSION");
+if (/Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 	window.location.replace("mobile.html");
+}
+else if(w/h < 1.1){
+	console.log("TABLE COMPRESSION");
+	window.location.replace("index_comp.html");
 }
 </script>
 
@@ -494,11 +497,6 @@ document.documentElement.style.setProperty('--headheight',headheight);
 var w = window.innerWidth;
 var h = window.innerHeight;
 console.log(w+" x "+h);
-
-if(w/h < 1.1){
-	console.log("TABLE COMPRESSION");
-	window.location.replace("mobile.html");
-}
 
 if(w/h < 1.45){
 	console.log("small window");
