@@ -1789,3 +1789,7 @@
   content: "\eb1a";
 }
 
+.icon-devpost:before {
+  content: "\eb1c";
+}
+
