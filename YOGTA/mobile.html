@@ -469,6 +469,15 @@ if(delayVar!=100){
 if(loading){
 setTimeout(function() {
   console.log("Loading");
+  try{
+	var headheightNum = document.getElementById("headerDiv").clientHeight  + navheightNum;
+	secElement.style.top = headheightNum + "px";
+	console.log("ADDED");
+  }
+  catch(err){
+	//var failMessage = "Fail - " + err.message;
+	//console.log("FAIL - " +);
+  }
 	delayVar+=1;
 	delayer();
 }, 500);
