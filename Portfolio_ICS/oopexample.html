@@ -1,0 +1,467 @@
+<html>
+
+<head>
+By Jerry, Nicholas, Andrey
+<style>
+.center {
+max-width: 500px;
+margin: auto;
+}
+table {
+width: 500px
+} 
+</style>
+</head>
+
+<body>
+<div class="center">
+<p>The purpose of the following Shrek-themed story is our attempt to explain the key concepts of Object-Oriented Programming.<br><br>
+As in any story, there is a setting.<br></p>
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>A swamp has a few key ingredients: mud puddles, danger signs, and outhouse. It has a location and exists in present time. It usually has 3 mud puddles, is located in the forest, and is situated in 2001.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>Swamp<br>
+&emsp;&emsp;has a certain number of mud puddles<br>
+&emsp;&emsp;has a certain number of danger signs<br>
+&emsp;&emsp;has a certain number of outhouses<br>
+&emsp;&emsp;is located somewhere<br>
+&emsp;&emsp;exists at a certain time<br><br>
+&emsp;&emsp;a typical Swamp would have<br>
+&emsp;&emsp;&emsp;&emsp;3 mud puddles<br>
+&emsp;&emsp;&emsp;&emsp;location in Forest<br>
+&emsp;&emsp;&emsp;&emsp;time period in 2001</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public class Swamp<br>
+{<br>
+&emsp;&emsp;int mudPuddles;<br>
+&emsp;&emsp;int dangerSigns;<br>
+&emsp;&emsp;int outhouses;<br>
+&emsp;&emsp;String location;<br>
+&emsp;&emsp;int time;<br>
+&nbsp;<br>
+&emsp;&emsp;public Swamp()<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;mudPuddles = 3;<br>
+&emsp;&emsp;&emsp;&emsp;location = "Forest";<br>
+&emsp;&emsp;&emsp;&emsp;time = 2001;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<p>Now that we have the setting of Shrek’s story, we need the characters.<br></p>
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>An Ogre is a large, hideous humanoid creature. They have lots of layers. They have a head, body, ears, legs, arms, and eyes. They have characteristics such as sex and height.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>Ogre<br>
+&emsp;&emsp;has legs<br>
+&emsp;&emsp;has arms<br>
+&emsp;&emsp;has a head<br>
+&emsp;&emsp;has eyes<br>
+&emsp;&emsp;has layers<br>
+&emsp;&emsp;has a height<br>
+&emsp;&emsp;has a sex<br><br>
+&emsp;&emsp;a typical Ogre would have<br>
+&emsp;&emsp;&emsp;&emsp;two legs<br>
+&emsp;&emsp;&emsp;&emsp;two arms<br>
+&emsp;&emsp;&emsp;&emsp;one head<br>
+&emsp;&emsp;&emsp;&emsp;two eyes<br>
+&emsp;&emsp;&emsp;&emsp;two ears<br>
+&emsp;&emsp;&emsp;&emsp;500 layers<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public class Ogre<br>
+{<br>
+&emsp;&emsp;int legs;<br>
+&emsp;&emsp;int arms;<br>
+&emsp;&emsp;int head;<br>
+&emsp;&emsp;int eyes;<br>
+&emsp;&emsp;int ears;<br>
+&emsp;&emsp;int layers;<br>
+&emsp;&emsp;int height;<br>
+&emsp;&emsp;String sex;<br>
+&nbsp;<br>
+&emsp;&emsp;public Ogre()<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;legs = 2;<br>
+&emsp;&emsp;&emsp;&emsp;arms = 2;<br>
+&emsp;&emsp;&emsp;&emsp;head = 1;<br>
+&emsp;&emsp;&emsp;&emsp;eyes = 2;<br>
+&emsp;&emsp;&emsp;&emsp;ears = 2;<br>
+&emsp;&emsp;&emsp;&emsp;layers = 500;<br>
+&emsp;&emsp;}<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<p>We have the base for a typical ogre. We need to adjust it to be a specific ogre that makes a true character (Shrek).<br></p>
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek is a specific ogre. He has the basic descriptions of an ogre in that he has 1 head, 2 legs, 2 eyes, etc. He has, however, additional qualities that renders him an unique ogre - he has a preference for foods; he has a sex; he has a crush...</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek extends the idea of Ogre<br>
+&emsp;&emsp;has a mood<br>
+&emsp;&emsp;has a favourite food<br>
+&emsp;&emsp;has a certain amount of earwax<br>
+&emsp;&emsp;has a crush<br><br>
+&emsp;&emsp;a typical Shrek would<br>
+&emsp;&emsp;&emsp;&emsp;be male<br>
+&emsp;&emsp;&emsp;&emsp;enjoy rats<br>
+&emsp;&emsp;&emsp;&emsp;start with 0 happiness<br>
+&emsp;&emsp;&emsp;&emsp;have the maximum amount of earwax</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public class Shrek extends Ogre<br>
+{<br>
+&emsp;&emsp;String favouriteFood;<br>
+&emsp;&emsp;double height;<br>
+&emsp;&emsp;int happiness;<br>
+&emsp;&emsp;int amountOfEarwax;<br>
+&emsp;&emsp;Ogre crush;<br>
+&nbsp;<br>
+&emsp;&emsp;public Shrek()<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;sex = "Male";<br>
+&emsp;&emsp;&emsp;&emsp;favouriteFood = "Rats";<br>
+&emsp;&emsp;&emsp;&emsp;height = 2.23;<br>
+&emsp;&emsp;&emsp;&emsp;happiness = 0;<br>
+&emsp;&emsp;&emsp;&emsp;amountOfEarwax = 100000;<br>
+&emsp;&emsp;}<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<p>We have a setting, a character, now we actually need to make the character do something. We need an event.<br></p>
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek Goes for a Walk in the Forest<br>
+This story takes place in Shrek’s swamp. It has two mud puddles, 1 danger sign, and 5 outhouses.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek's Walk<br>
+&emsp;&emsp;Swamp shrekSwamp is a new Swamp<br>
+&emsp;&emsp;there are 2 mud puddles in shrekSwamp<br>
+&emsp;&emsp;there is 1 danger sign in shrekSwamp<br>
+&emsp;&emsp;there are 5 out houses in shrekSwamp</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public class ShrekWalk<br>
+{<br>
+&emsp;&emsp;public static void main(String args[])<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;Swamp shrekSwamp = new Swamp;<br>
+&emsp;&emsp;&emsp;&emsp;shrekSwamp.mudPuddles = 2;<br>
+&emsp;&emsp;&emsp;&emsp;shrekSwamp.dangerSigns = 1;<br>
+&emsp;&emsp;&emsp;&emsp;shrekSwamp.outhouses = 5;<br>
+&emsp;&emsp;}<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek’s level of happiness increases by 1 with every hour he spends in the forest.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>spendHourInForest<br>
+&emsp;&emsp;happiness increases by 1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public void spendHourInForest()<br>
+{<br>
+&emsp;&emsp;happiness++;<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>Every time Shrek meets another beautiful ogre, his happiness increases by 10000 and his crush becomes that ogre. He exclaims "I’m so in love with " + insert his ogre crush's name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>meetBeautifulOgre<br>
+&emsp;&emsp;happiness increases by 10000<br>
+&emsp;&emsp;print "I'm so in love with + (the specified damsel) + !"</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public void meetBeautifulOgre(Ogre crush)<br>
+{<br>
+&emsp;&emsp;happiness += 10000;<br>
+&emsp;&emsp;this.crush = crush;<br>
+&emsp;&emsp;System.out.println("I’m so in love with " + crush + "!");<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek is a specific ogre. He has the basic descriptions of an ogre in that he has 1 head, 2 legs, 2 eyes, etc. He has, however, additional qualities that renders him an unique ogre - he has a preference for foods; he has a sex; he has a crush...<br>
+Shrek’s level of happiness increases by 1 with every hour he spends in the forest.<br>
+Every time Shrek meets another beautiful ogre, his happiness increases by 10000 and his crush becomes that ogre. He exclaims "I’m so in love with " + insert his ogre crush's name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>Shrek extends the idea of Ogre<br>
+&emsp;&emsp;has a mood<br>
+&emsp;&emsp;has a favourite food<br>
+&emsp;&emsp;has a certain amount of earwax<br>
+&emsp;&emsp;has a crush<br><br>
+&emsp;&emsp;a Shrek would<br>
+&emsp;&emsp;&emsp;&emsp;be male<br>
+&emsp;&emsp;&emsp;&emsp;enjoy rats<br>
+&emsp;&emsp;&emsp;&emsp;start with 0 happiness<br>
+&emsp;&emsp;&emsp;&emsp;have the maximum amount of earwax<br><br>
+&emsp;&emsp;spendHourInForest<br>
+&emsp;&emsp;&emsp;&emsp;happiness increases by 1<br><br>
+&emsp;&emsp;meetBeautifulOgre<br>
+&emsp;&emsp;&emsp;&emsp;happiness increases by 10000<br>
+&emsp;&emsp;&emsp;&emsp;print "I'm so in love with + (the specified damsel) + !"</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public class Shrek extends Ogre<br>
+{<br>
+&emsp;&emsp;String favouriteFood;<br>
+&emsp;&emsp;double height;<br>
+&emsp;&emsp;int happiness;<br>
+&emsp;&emsp;int amountOfEarwax;<br>
+&emsp;&emsp;Ogre crush;<br>
+&nbsp;<br>
+&emsp;&emsp;public Shrek()<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;sex = "Male";<br>
+&emsp;&emsp;&emsp;&emsp;favouriteFood = "Rats";<br>
+&emsp;&emsp;&emsp;&emsp;height = 2.23;<br>
+&emsp;&emsp;&emsp;&emsp;happiness = 0;<br>
+&emsp;&emsp;&emsp;&emsp;amountOfEarwax = 100000;<br>
+&emsp;&emsp;}<br><br>
+&emsp;&emsp;public void spendHourInForest()<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;happiness++<br>
+&emsp;&emsp;}<br><br>
+&emsp;&emsp;public void meetBeautifulOgre(Ogre crush)<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;happiness += 10000;<br>
+&emsp;&emsp;&emsp;&emsp;this.crush = crush;<br>
+&emsp;&emsp;&emsp;&emsp;System.out.println("I’m so in love with " + crush + "!");<br>
+&emsp;&emsp;}<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #00FF00">
+<tbody>
+<tr>
+<td>
+<p>Here is the main plot of Shrek's walk at Shrek's swamp:<br>
+There is a swamp called shrekSwamp. shrekSwamp has two mud puddles, 1 danger sign, and 5 outhouses. There is an ogre named Shrek, who is male, enjoys rats, is 2.23 metres tall, has 0 happiness, and has 100000 litres of ear wax. Shrake is a female ogre who is 2.22 metres tall and enjoys cockroaches. Shrek spends some hours in the forest and he becomes increasingly happier. Then, Shrek meets her in the forest and falls in love with Shrake.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FFFF00">
+<tbody>
+<tr>
+<td>
+<p>Main plot of Shrek's Walk at Shrek Swamp<br>
+&emsp;&emsp;Swamp shrekSwamp is a new Swamp<br>
+&emsp;&emsp;there are 2 mud puddles in shrekSwamp<br>
+&emsp;&emsp;there is 1 danger sign in shrekSwamp<br>
+&emsp;&emsp;there are 5 out houses in shrekSwamp<br><br>
+&emsp;&emsp;Shrek shrek is a new Shrek<br>
+&emsp;&emsp;He will be be 2.23 metres tall<br><br>
+&emsp;&emsp;Ogre shrake is a new Ogre<br>
+&emsp;&emsp;She will be female<br>
+&emsp;&emsp;She will be 2.22 metres tall<br>
+&emsp;&emsp;She will enjoy cockroaches<br><br>
+&emsp;&emsp;Shrek spends 2 hours in the forest<br>
+&emsp;&emsp;Shrek meets Shrake<br>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<table style="border: 5px solid #FF0000">
+<tbody>
+<tr>
+<td>
+<p>public class ShrekWalk<br>
+{<br>
+&emsp;&emsp;public static void main(String args[])<br>
+&emsp;&emsp;{<br>
+&emsp;&emsp;&emsp;&emsp;Swamp shrekSwamp = new Swamp();<br>
+&emsp;&emsp;&emsp;&emsp;shrekSwamp.mudPuddles = 2;<br>
+&emsp;&emsp;&emsp;&emsp;shrekSwamp.dangerSigns = 1;<br>
+&emsp;&emsp;&emsp;&emsp;shrekSwamp.outhouses = 5;<br><br>
+&emsp;&emsp;&emsp;&emsp;Shrek shrek = new Shrek();<br>
+&emsp;&emsp;&emsp;&emsp;shrek.height = 2.23;<br><br>
+&emsp;&emsp;&emsp;&emsp;Ogre shrake = new Ogre();<br>
+&emsp;&emsp;&emsp;&emsp;shrake.sex = "female";<br>
+&emsp;&emsp;&emsp;&emsp;shrake.height = 2.23;<br>
+&emsp;&emsp;&emsp;&emsp;shrake.favouriteFood = "Cockroaches";<br><br>
+&emsp;&emsp;&emsp;&emsp;shrek.spendHourInForest();<br>
+&emsp;&emsp;&emsp;&emsp;shrek.spendHourInForest();<br>
+&emsp;&emsp;&emsp;&emsp;shrek.meetBeautifulOgre(shrake);<br>
+&emsp;&emsp;}<br>
+}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+</body>
