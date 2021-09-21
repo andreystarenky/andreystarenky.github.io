@@ -8,7 +8,7 @@
 <!-- comment  -->
 <body>
 <center>
-<h2>LATEST POLL RESULTS</h2>
+<h2>LIVE ELECTION RESULTS</h2>
 </center>
 <table style="width:100%" cellpadding="10">
 <col width="400">
@@ -65,7 +65,8 @@
   </tr>
 </table>
     <center>
-Last updated <span id="m"></span> <span id="d"></span>, <span id="y"></span>
+<!--Last updated <span id="m"></span> <span id="d"></span>, <span id="y"></span>-->    
+170 for Majority
 
 <script>
 	
@@ -90,6 +91,37 @@ document.getElementById("m").innerHTML = m;
 document.getElementById("d").innerHTML = d;
 document.getElementById("y").innerHTML = y;
 
+var conNum = 121;
+var conCH = "seats";
+document.getElementById("conNum").innerHTML = conNum;
+document.getElementById("conCH").innerHTML = conCH;
+
+var libNum = 157;
+var libCH = "seats";
+document.getElementById("libNum").innerHTML = libNum;
+document.getElementById("libCH").innerHTML = libCH;
+
+var ndpNum = 29;
+var ndpCH = "seats";
+document.getElementById("ndpNum").innerHTML = ndpNum;
+document.getElementById("ndpCH").innerHTML = ndpCH;
+
+var greNum = 2;
+var greCH = "seats";
+document.getElementById("greNum").innerHTML = greNum;
+document.getElementById("greCH").innerHTML = greCH;
+
+var bloNum = 29;
+var bloCH = "seats";
+document.getElementById("bloNum").innerHTML = bloNum;
+document.getElementById("bloCH").innerHTML = bloCH;
+
+var othNum = 0;
+var othCH = "seats";
+document.getElementById("othNum").innerHTML = othNum;
+document.getElementById("othCH").innerHTML = othCH;
+	
+	<!--
 var conNum = 31.3+"%";
 var conCH = "&#9660;"+ 1.2;
 document.getElementById("conNum").innerHTML = conNum;
@@ -118,7 +150,7 @@ document.getElementById("bloCH").innerHTML = bloCH;
 var othNum = 6.4+"%";
 var othCH = "&#9650;"+ 1.1;
 document.getElementById("othNum").innerHTML = othNum;
-document.getElementById("othCH").innerHTML = othCH;
+document.getElementById("othCH").innerHTML = othCH;-->
 
 </script>
 </center>
