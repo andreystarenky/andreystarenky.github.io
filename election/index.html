@@ -8,7 +8,7 @@
 <!-- comment  -->
 <body>
 <center>
-<h2>FINAL VOTING PERCENTAGE</h2>
+<h2>LIVE ELECTION RESULTS</h2>
 </center>
 <table style="width:100%" cellpadding="10">
 <col width="400">
@@ -65,10 +65,12 @@
   </tr>
 </table>
     <center>
-Last updated <span id="m"></span> <span id="d"></span>, <span id="y"></span>
+<!--Last updated <span id="m"></span> <span id="d"></span>, <span id="y"></span>-->    
+170 for Majority
 
 <script>
 	
+	/*
 var dt = new Date();
 var month = new Array();
 month[0] = "January";
@@ -89,36 +91,69 @@ var y = dt.getYear() +1900;
 document.getElementById("m").innerHTML = m;
 document.getElementById("d").innerHTML = d;
 document.getElementById("y").innerHTML = y;
+*/
 
-var conNum = 34.4+"%";
-var conCH = "-";
+var conNum = 121;
+var conCH = "seats";
 document.getElementById("conNum").innerHTML = conNum;
 document.getElementById("conCH").innerHTML = conCH;
 
-var libNum = 33.0+"%";
-var libCH = "-";
+var libNum = 157;
+var libCH = "seats";
 document.getElementById("libNum").innerHTML = libNum;
 document.getElementById("libCH").innerHTML = libCH;
 
-var ndpNum = 15.9+"%";
-var ndpCH = "-";
+var ndpNum = 29;
+var ndpCH = "seats";
 document.getElementById("ndpNum").innerHTML = ndpNum;
 document.getElementById("ndpCH").innerHTML = ndpCH;
 
-var greNum = 6.5+"%";
-var greCH = "-";
+var greNum = 2;
+var greCH = "seats";
 document.getElementById("greNum").innerHTML = greNum;
 document.getElementById("greCH").innerHTML = greCH;
 
-var bloNum = 7.7+"%";
-var bloCH = "-";
+var bloNum = 29;
+var bloCH = "seats";
 document.getElementById("bloNum").innerHTML = bloNum;
 document.getElementById("bloCH").innerHTML = bloCH;
 
-var othNum = 1.6+"%";
-var othCH = "-";
+var othNum = 0;
+var othCH = "seats";
 document.getElementById("othNum").innerHTML = othNum;
 document.getElementById("othCH").innerHTML = othCH;
+	
+/*
+var conNum = 31.3+"%";
+var conCH = "&#9660;"+ 1.2;
+document.getElementById("conNum").innerHTML = conNum;
+document.getElementById("conCH").innerHTML = conCH;
+
+var libNum = 31.9+"%";
+var libCH = "&#9650;"+ 0.2;
+document.getElementById("libNum").innerHTML = libNum;
+document.getElementById("libCH").innerHTML = libCH;
+
+var ndpNum = 19.3+"%";
+var ndpCH = "&#9660;"+ 0.7;
+document.getElementById("ndpNum").innerHTML = ndpNum;
+document.getElementById("ndpCH").innerHTML = ndpCH;
+
+var greNum = 3.4+"%";
+var greCH = "&#9650;"+ 0.3;
+document.getElementById("greNum").innerHTML = greNum;
+document.getElementById("greCH").innerHTML = greCH;
+
+var bloNum = 6.3+"%";
+var bloCH = "&#9650;"+ 0.4;
+document.getElementById("bloNum").innerHTML = bloNum;
+document.getElementById("bloCH").innerHTML = bloCH;
+
+var othNum = 6.4+"%";
+var othCH = "&#9650;"+ 1.1;
+document.getElementById("othNum").innerHTML = othNum;
+document.getElementById("othCH").innerHTML = othCH;
+*/
 
 </script>
 </center>
