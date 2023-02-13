@@ -523,6 +523,23 @@ li > a:only-child:after {
     box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
+.btn.select {
+    background: #74d2e7;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    color: #fff;
+    padding: 0.6em 2.5em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    -moz-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
 /*--//banner--*/
 
 /*--about--*/
@@ -751,6 +768,10 @@ h4.text-w3pvt {
 
 .btn.submit:hover,
 .btn.shop:hover {
+    opacity: 0.9;
+}
+
+.btn.select:hover {
     opacity: 0.9;
 }
 
@@ -1572,6 +1593,10 @@ h3.sub-w3ls-headf {
     .btn.shop {
         padding: 0.6em 2em;
     }
+	
+	.btn.select {
+        padding: 0.6em 2em;
+    }
 
     .content-grid {
         max-width: 500px;
@@ -1588,6 +1613,11 @@ h3.sub-w3ls-headf {
     }
 
     .btn.shop {
+        padding: 0.6em 1.5em;
+        font-size: 0.8em;
+    }
+	
+	.btn.select {
         padding: 0.6em 1.5em;
         font-size: 0.8em;
     }

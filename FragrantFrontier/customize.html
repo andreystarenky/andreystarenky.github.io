@@ -107,13 +107,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 			<center>
 			<h2><i>When</i> will you use your fragrance?</h2>
-				ooga booga
+			<br/>
+			<a id="day" class="btn select" onclick="clickDay()" style="margin-right:3em; color: #FFF;">Day</a>    
+			<a id="night" class="btn select" onclick="clickNight()" style="color: #FFF;">Night</a>
+			<br/><br/><br/>
 				
 			<h2><i>What</i> will you use your fragrance for?</h2>
+			<br/>
+			<a id="work" class="btn select" onclick="clickWork()" style="margin-right:2em; color: #FFF;">Work</a>
+			<a id="play" class="btn select" onclick="clickPlay()" style="margin-right:2em; color: #FFF;">Play</a>			
+			<a id="move" class="btn select" onclick="clickMove()" style="color: #FFF;">Move</a>
+			<br/><br/><br/>
 			
 			<h2><i>Which</i> theme will your fragrance be?</h2>
+			<br/>
+			<a id="fresh" class="btn select" onclick="clickFresh()" style="margin-right:2em; color: #FFF;">Fresh</a>
+			<a id="sexy" class="btn select" onclick="clickSexy()" style="margin-right:2em; color: #FFF;">Sexy</a>			
+			<a id="elegant" class="btn select" onclick="clickElegant()" style="color: #FFF;">Elegant</a>
+			<br/><br/><br/>
 			
 			<h2>Select 3 ingredients:</h2>
+			<br/>
+			<a id="tobacco" class="btn select" onclick="clickTobacco()" style="margin-right:2em; color: #FFF;">Tobacco</a>
+			<a id="sandalwood" class="btn select" onclick="clickSandalwood()" style="margin-right:2em; color: #FFF;">Sandalwood</a>			
+			<a id="bergamot" class="btn select" onclick="clickBergamot()" style="color: #FFF;">Bergamot</a>
+			<br/><br/>
+			<a id="lavender" class="btn select" onclick="clickLavender()" style="margin-right:2em; color: #FFF;">Lavender</a>
+			<a id="vanilla" class="btn select" onclick="clickVanilla()" style="color: #FFF;">Vanilla</a>			
+			<br/><br/>
+			<a id="rose" class="btn select" onclick="clickRose()" style="margin-right:2em; color: #FFF;">Rose</a>
+			<a id="blackPepper" class="btn select" onclick="clickBlackPepper()" style="color: #FFF;">Black Pepper</a>
+			<br/><br/><br/><br/>
+			<a href="single.html" class="btn select" style="margin-right:2em; color: #FFF; background: #447F9D; font-size: 1.2em;">Order Now</a>
+			<br/>
 			</center>
 		
         </div>
@@ -238,5 +264,131 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //copyright -->
 
 </body>
+
+<script>
+function clickDay() {
+  document.getElementById("day").style.background = "#063147";
+  document.getElementById("night").style.background = "#74d2e7"; 
+}
+
+function clickNight() {
+  document.getElementById("night").style.background = "#063147";
+  document.getElementById("day").style.background = "#74d2e7"; 
+}
+
+function clickWork() {
+  document.getElementById("work").style.background = "#063147";
+  document.getElementById("play").style.background = "#74d2e7"; 
+  document.getElementById("move").style.background = "#74d2e7"; 
+}
+
+function clickPlay() {
+  document.getElementById("play").style.background = "#063147";
+  document.getElementById("work").style.background = "#74d2e7"; 
+  document.getElementById("move").style.background = "#74d2e7"; 
+}
+
+function clickMove() {
+  document.getElementById("move").style.background = "#063147";
+  document.getElementById("play").style.background = "#74d2e7"; 
+  document.getElementById("work").style.background = "#74d2e7"; 
+}
+
+function clickFresh() {
+  document.getElementById("fresh").style.background = "#063147";
+  document.getElementById("sexy").style.background = "#74d2e7"; 
+  document.getElementById("elegant").style.background = "#74d2e7"; 
+}
+
+function clickSexy() {
+  document.getElementById("sexy").style.background = "#063147";
+  document.getElementById("fresh").style.background = "#74d2e7"; 
+  document.getElementById("elegant").style.background = "#74d2e7"; 
+}
+
+function clickElegant() {
+  document.getElementById("elegant").style.background = "#063147";
+  document.getElementById("sexy").style.background = "#74d2e7"; 
+  document.getElementById("fresh").style.background = "#74d2e7"; 
+}
+
+function clickTobacco() {
+	const elem = document.getElementById("tobacco");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+function clickSandalwood() {
+	const elem = document.getElementById("sandalwood");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+function clickBergamot() {
+	const elem = document.getElementById("bergamot");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+function clickLavender() {
+	const elem = document.getElementById("lavender");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+function clickVanilla() {
+	const elem = document.getElementById("vanilla");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+function clickRose() {
+	const elem = document.getElementById("rose");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+function clickBlackPepper() {
+	const elem = document.getElementById("blackPepper");
+	console.log(elem.style.background);
+	if (elem.style.background == "rgb(6, 49, 71)"){
+		elem.style.background = "#74d2e7";
+	}
+	else{
+		elem.style.background = "#063147";
+	}
+}
+
+</script>
 
 </html>
