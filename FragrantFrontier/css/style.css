@@ -486,7 +486,7 @@ li > a:only-child:after {
 
 .main-sec.inner-page {
     background: #74d2e7;
-    min-height: 20em;
+    min-height: 10em;
     position: relative;
 }
 
