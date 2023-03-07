@@ -112,6 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                     <div class="desc1-right col-md-6 pl-lg-3">
                         <h3>Custom Cologne</h3>
+						<h6>Order ID #<span id = "orderId">9752</span></h6><br/>
                         <h5>$59.99 <span>$69.99</span></h5>
                         <div class="available mt-3">
 						<!--
@@ -272,5 +273,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //copyright -->
 
 </body>
+
+<script src="https://randojs.com/1.0.0.js"></script>
+<script>
+	function generateOrderID(){
+		document.getElementById("orderId").innerHTML = rando(1328, 9753);
+	}
+	generateOrderID();
+</script>
 
 </html>
